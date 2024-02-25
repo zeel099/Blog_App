@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS load (loadId INT NOT NULL AUTO_INCREMENT,
+                                     loadingPoint VARCHAR(255),
+                                     unloadingPoint VARCHAR(255),
+                                     productType VARCHAR(255),
+                                     truckType VARCHAR(255),
+                                     noOfTrucks INT,
+                                     weight INT,
+                                     comment VARCHAR(255),
+                                     shipperId uuid DEFAULT uuid_generate_v4 (),
+                                     date DATE);
